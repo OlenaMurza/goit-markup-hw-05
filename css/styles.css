@@ -31,6 +31,7 @@ img {
 /* Header  */
 .header {
     border-bottom: 1px solid #ECECEC;
+   
 }
 
 .container {
@@ -185,6 +186,7 @@ img {
     padding-bottom: 200px;
     gap: 30px;  
     width: 696px;
+    z-index: 100;
 }
 
 .hero-main {
@@ -263,6 +265,73 @@ img {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+/* Modal window */
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    opacity: 1;
+    transform: translateY(0%);
+    visibility: visible;
+    transition: opacity 500ms linear, visibility 500ms linear, transform 500ms linear;
+}
+
+.backdrop.is-hidden {
+    visibility: 0;
+    opacity: none;
+    pointer-events: hidden;
+    transform: translateY(-100%);
+}
+
+.modal {
+/* start */
+    /* центрування абсолютно позиційованих елементіів */
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+/* end */
+
+    width: 528px;
+    height: 581px;
+  
+    background-color: #fff;
+    border-radius: 4px;
+    
+}
+
+.modal-btn {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 8px;
+    left: 8px;
+    right: 490px;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-icon {
+    fill: currentColor;
 }
 
 /*section*/
@@ -800,7 +869,7 @@ color: #2196F3;
     transform: translateY(100%);
 
     transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
@@ -818,13 +887,15 @@ color: #2196F3;
 
 .list-item2:hover .overlay {
     transform: translateY(0%);
+    
 }
+
 
 .list-item2:hover,
 .list-item2:focus {
     border: 1px solid #EEEEEE;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-            1px 4px 6px rgba(0, 0, 0, 0.16);
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 
     }
 

@@ -45,10 +45,11 @@
            <a class="list-item-link1" href="tel:+380961111111"><svg class="header-icon-smartphone">
            <use  width="10" heidth="16" href="./images/symbol-defs.svg#smartphone"></use>
             </svg>+38 096 111 11 11</a></li>
-          </ul>
-       
+          </ul>       
       </div>
     </header>
+
+
 <!-- header -->
     <main class="main">
         
@@ -56,12 +57,24 @@
       <div class="container">          
             
            <h1 class="hero-text">Ефективні рішення для вашого бізнесу</h1>
-            <button class="button" type="button"><span class="text-button">Замовити послугу</span></button>
+            <button class="button" type="button"><span class="text-button" data-modal-open>Замовити послугу</span></button>
           </div>
       </div>
 
-        
-      </section>
+      <!-- Modal window -->
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="modal-btn" data-modal-close>
+            <svg class="modal-icon">
+          <use width="18px" heidth="18px" href="./images/SVG/close-black-18dp1.svg"></use>
+          </svg>
+          </button>
+        </div>
+      </div>
+
+       </section>
+
+
 <!-- section -->
       <section class="section features">
         <div class="container features-container">
@@ -438,5 +451,7 @@
         </address>
       </div>       
     </footer>
+
+  <script src="./js/modal.js"></script>
   </body>
 </html>
