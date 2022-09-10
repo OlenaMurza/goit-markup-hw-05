@@ -886,10 +886,12 @@ color: #2196F3;
 }
 
 .list-item2:hover .overlay {
-    transform: translateY(0%);
-    
+    transform: translateY(0%);    
 }
 
+.liat-item2:focus .overlay {
+    transform: translateY(0%);
+}
 
 .list-item2:hover,
 .list-item2:focus {
