@@ -126,16 +126,17 @@ img {
     height: 4px;
     border-radius: 2px;
     background-color: #2196F3;
-    
 }
 
 .list-item.current {
     color: #2196f3;
 }
+
  /* email_tel */
 .list-item-link1:last-child {
     margin-right: 0;
 }
+
 /* 
 .list-item-nav {
     display: flex;
