@@ -108,6 +108,7 @@ img {
     letter-spacing: 0.02em;
     text-decoration: none;
 
+    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
@@ -119,7 +120,7 @@ img {
 
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -2%;
     display: block;
     width: 100%;
     height: 4px;
@@ -157,6 +158,11 @@ img {
     letter-spacing: 0.02em;
     color: #757575;
     text-decoration: none;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
 }
 .header-icon-envelope {
     width: 16px;
@@ -312,7 +318,7 @@ img {
 .modal-btn {
     position: absolute;
     top: 8px;
-    left: 8px;
+    right: 8px;
 
     width: 30px;
     height: 30px;
@@ -459,6 +465,10 @@ margin-right: 0;
     text-transform: uppercase;
 }
 
+.overlay-work-text {
+    margin: 0;
+}
+
 /*team*/
 
 .team {
@@ -544,6 +554,7 @@ margin-right: 0;
     height: 100%;
     border-radius: 50%;
 
+    transition-property: color, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -604,6 +615,7 @@ margin-right: 0;
     width: 100%;
     height: 100%;
 
+    transition-property: border-color, color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -691,6 +703,7 @@ color: #2196F3;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
 
+    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -745,6 +758,7 @@ color: #2196F3;
         border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
 
+    transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -827,7 +841,8 @@ color: #2196F3;
     color: #212121;
     cursor: pointer;
     border: none;
- 
+    
+    transition-property: background-color, color, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
@@ -891,7 +906,7 @@ color: #2196F3;
     transform: translateY(0);    
 }
 
-.list-item2:focus .overlay {
+.project-img:focus .overlay {
     transform: translateY(0);
 }
 
@@ -905,6 +920,10 @@ color: #2196F3;
 
 .project-img {
     text-decoration: none;
+
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     /* margin-block: 370px 400px;
     margin-block: inherit;
     margin-bottom: 20px;
