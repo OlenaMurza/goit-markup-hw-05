@@ -343,6 +343,54 @@ img {
     fill: currentColor;
 }
 
+.register-form {
+  
+    margin: 40px;
+    padding: 0;
+
+
+}
+
+.content-register-form {
+   border: 1px solid tomato;
+    text-transform: uppercase;
+   
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    
+    letter-spacing: 0.03em;
+    
+    color: #212121;
+}
+
+.register-form-group {
+    position: relative;
+    display: block;
+    flex-direction: column ;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    
+    border: 1px solid tomato;
+    width: 448px;
+    height: 342px;   
+}
+
+.register-form-label {
+
+}
+
+.register-form-input {
+    width: 448px;
+    height: 40px;
+    margin: 0;
+    padding: ;
+    
+
+}
 /*section*/
 .features-container {
 
